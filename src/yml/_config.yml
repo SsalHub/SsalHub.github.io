@@ -1,15 +1,54 @@
 # Site Settings
-#=include site.yml
+name: Gomsong
+title: LSLAB
+description: >- # this means to ignore newlines until "baseurl:"
+  LSLAB project by Gomsong
+tags:
+  - blog
+  - template
+  - jekyll
+  - theme
+  - netlify
+  - lostsaga
+show_hero: true
+menu:
+  - title: Home
+    url: /
+  - title: About
+    url: /about
+  - title: Contact
+    url: /contact
+  - title: Feed
+    url: /feed.xml
+email: sjw000324@gmail.com
+# See: https://disqus.com/
+# disqus_username: disqus_username
+# Contact Form Setting
+# See: https://formspree.io/
+# formspree_form_id: formspree_form_id
 
 # Social Media Settings
 # Remove the item if you don't need it
-#=include social.yml
+github_username: SsalHub
+# facebook_username: facebook_username
+# twitter_username: twitter_username
+# instagram_username: instagram_username
+# linkedin_username: linkedin_username
+# medium_username: medium_username
 
 # Posts Settings
-#=include posts.yml
+show_time_bar: true
+show_modal_on_exit: false
+show_modal_on_finish_post: true
+two_columns_layout: true
 
 # Advanced Settings
-#=include advanced.yml
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://ssalhub.github.io" # the base hostname & protocol for your site
+# google_analytics: "UA-XXXXXXXX-X"
+language: "kr"
+categories_folder: category
+# sent_message_url: "/contact/message-sent/"
 
 # Build settings
 markdown: kramdown
@@ -50,17 +89,18 @@ plugins:
   - jekyll-paginate-content
 
 # Exclude my node related stuff
-exclude: [
-  'package.json',
-  'package-lock.json',
-  'src',
-  'node_modules',
-  'initpost.sh',
-  'Gemfile',
-  'Gemfile.lock',
-  'gulpfile.js',
-  'README.md'
-]
+exclude:
+  [
+    "package.json",
+    "package-lock.json",
+    "src",
+    "node_modules",
+    "initpost.sh",
+    "Gemfile",
+    "Gemfile.lock",
+    "gulpfile.js",
+    "README.md",
+  ]
 
 # Theme
 version: v3.1.2
