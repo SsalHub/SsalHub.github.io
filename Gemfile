@@ -33,3 +33,11 @@ end
 # gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 
 gem "github-pages", "~> 231", :group => :jekyll_plugins
+
+# Theme [Jekflix] dependencies
+gem "kramdown"
+gem "kramdown-parser-gfm"
+gem "rouge"
+gem "jekyll-paginate"
+gem "jekyll-paginate-content"
+gem "json"
