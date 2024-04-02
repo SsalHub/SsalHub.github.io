@@ -100,6 +100,7 @@ exclude:
     "Gemfile.lock",
     "gulpfile.js",
     "README.md",
+    "vendor",
   ]
 
 # Theme
