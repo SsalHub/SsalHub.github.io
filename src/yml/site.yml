@@ -1,6 +1,6 @@
 name: LSLAB
-title: LSLAB : LostSaga Lab 
-description: LSLAB is a wiki for LostSaga, developed by Gomsong. 
+title: LSLAB | LostSaga Lab
+description: LSLAB is a wiki for LostSaga, developed by Gomsong.
 tags:
   - lostsaga
   - kls
@@ -17,10 +17,8 @@ menu:
     url: /about
   - title: Contact
     url: /contact
-  - title: Feed
-    url: /feed.xml
   - title: LostSagaKeysViewer
-    url: /lskv.xml
+    url: /lskv
 email: sjw000324@gmail.com
 # See: https://disqus.com/
 # disqus_username: disqus_username
