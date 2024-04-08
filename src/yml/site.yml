@@ -1,13 +1,14 @@
-name: Jekflix
-title: Jekflix | A blog theme for Jekyll
-description: Jekflix is a template for Jekyll inspired by Netflix and made by
-  Thiago Rossener.
+name: LSLAB
+title: LSLAB : LostSaga Lab 
+description: LSLAB is a wiki for LostSaga, developed by Gomsong. 
 tags:
+  - lostsaga
+  - kls
+  - lso
+  - wiki
   - blog
-  - template
+  - gomsong
   - jekyll
-  - theme
-  - netlify
 show_hero: true
 menu:
   - title: Home
@@ -18,9 +19,11 @@ menu:
     url: /contact
   - title: Feed
     url: /feed.xml
-email: youremail@test.com
+  - title: LostSagaKeysViewer
+    url: /lskv.xml
+email: sjw000324@gmail.com
 # See: https://disqus.com/
-disqus_username: disqus_username
+# disqus_username: disqus_username
 # Contact Form Setting
 # See: https://formspree.io/
-formspree_form_id: formspree_form_id
+# formspree_form_id: formspree_form_id
