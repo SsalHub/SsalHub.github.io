@@ -44,7 +44,6 @@ layout: page
             </fieldset>
         </form>
     </div>
-
 </div>
 
 <script type="text/javascript">
@@ -60,21 +59,21 @@ layout: page
     Vue.use(VeeValidate);
 
     const dictionary = {
-  { { site.translations.contact.errors.locale | default: 'en' } }: {
-        custom: {
-            name: {
-                required: "{{ site.translations.contact.errors.empty_name | default: 'Name is required' }}"
-            },
-            email: {
-                required: "{{ site.translations.contact.errors.empty_email | default: 'Email is required' }}",
+        "{{ site.translations.contact.errors.locale | default: 'kr' }}": {
+            custom: {
+                name: {
+                    required: "{{ site.translations.contact.errors.empty_name | default: 'Name is required' }}"
+                },
+                email: {
+                    required: "{{ site.translations.contact.errors.empty_email | default: 'Email is required' }}",
                     email: "{{ site.translations.contact.errors.invalid_email | default: 'Email is invalid' }}"
-            },
-            message: {
-                required: "{{ site.translations.contact.errors.empty_message | default: 'Message is required' }}"
+                },
+                message: {
+                    required: "{{ site.translations.contact.errors.empty_message | default: 'Message is required' }}"
+                }
             }
         }
-    }
-};
+    };
 
     VeeValidate.Validator.updateDictionary(dictionary);
     VeeValidate.Validator.setLocale("{{ site.translations.contact.errors.locale | default: 'en' }}");

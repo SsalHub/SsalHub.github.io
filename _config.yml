@@ -1,8 +1,7 @@
 # Site Settings
 name: Gomsong
 title: LSLAB
-description: >- # this means to ignore newlines until "baseurl:"
-  LSLAB project by Gomsong
+description: LSLAB is LostSaga wiki project, provided by Gomsong.
 tags:
   - blog
   - template
@@ -18,8 +17,8 @@ menu:
     url: /about
   - title: Contact
     url: /contact
-  - title: Feed
-    url: /feed.xml
+  - title: LostSaga KeysViewer
+    url: /lskv
 email: sjw000324@gmail.com
 # See: https://disqus.com/
 # disqus_username: disqus_username
