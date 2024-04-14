@@ -9,7 +9,7 @@ tags:
   - theme
   - netlify
   - lostsaga
-show_hero: false
+show_hero: true
 menu:
   - title: Home
     url: /
@@ -57,9 +57,8 @@ collections:
   authors:
     output: true
 paginate_path: "/page/:num/"
-show_get_theme_btn: true
-use_logo: true
-logo: "/lslab_logo.ico"
+show_get_theme_btn: false
+use_logo: false
 
 # Content paginator
 paginate_content:
