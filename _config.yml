@@ -3,12 +3,11 @@ name: Gomsong
 title: LSLAB
 description: LSLAB is LostSaga wiki project, provided by Gomsong.
 tags:
-  - blog
-  - template
-  - jekyll
-  - theme
-  - netlify
+  - wiki
   - lostsaga
+  - kls
+  - lso
+  - gomsong
 show_hero: true
 menu:
   - title: Home
