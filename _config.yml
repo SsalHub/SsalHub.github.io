@@ -1,4 +1,3 @@
-# Site Settings
 name: Gomsong
 title: LSLAB
 description: LSLAB is LostSaga wiki project, provided by Gomsong.
@@ -16,6 +15,8 @@ menu:
     url: /about
   - title: Contact
     url: /contact
+  - title: LostSaga Medal
+    url: /ls-medal
   - title: LostSaga KeysViewer
     url: /lskv
 email: sjw000324@gmail.com
@@ -24,15 +25,6 @@ email: sjw000324@gmail.com
 # Contact Form Setting
 # See: https://formspree.io/
 # formspree_form_id: formspree_form_id
-
-# Social Media Settings
-# Remove the item if you don't need it
-github_username: SsalHub
-# facebook_username: facebook_username
-# twitter_username: twitter_username
-# instagram_username: instagram_username
-# linkedin_username: linkedin_username
-# medium_username: medium_username
 
 # Posts Settings
 show_time_bar: true

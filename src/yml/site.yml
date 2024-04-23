@@ -15,6 +15,8 @@ menu:
     url: /about
   - title: Contact
     url: /contact
+  - title: LostSaga Medal
+    url: /ls-medal
   - title: LostSaga KeysViewer
     url: /lskv
 email: sjw000324@gmail.com
