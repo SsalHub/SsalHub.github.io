@@ -1,12 +1,48 @@
 Params = {
-    "test": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8
-    ]
+    "medal_package_a": [
+        {
+            "medalname": "medalname_1",
+            "medalname_kr": "medalname_1_kr",
+            "medaldata": [
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10
+            ]
+        },
+        {
+            "medalname": "medalname_2",
+            "medalname_kr": "medalname_2_kr",
+            "medaldata": [
+                2,
+                3,
+                4,
+                5,
+                6,
+                1,
+                2,
+                3
+            ]
+        },
+    ],
+    "medal_package_b": [
+        {
+            "medalname": "medalname_3",
+            "medalname_kr": "medalname_3_kr",
+            "medaldata": [
+                1,
+                2,
+                4,
+                5,
+                1,
+                7,
+                2,
+                6
+            ]
+        },
+    ],
 }
