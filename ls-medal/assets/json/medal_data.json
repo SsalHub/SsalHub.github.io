@@ -1,48 +1,53 @@
 Params = {
-    "medal_package_a": [
+    packages: [
         {
-            "medalname": "medalname_1",
-            "medalname_kr": "medalname_1_kr",
-            "medaldata": [
-                3,
-                4,
-                5,
-                6,
-                7,
-                8,
-                9,
-                10
+            name: "package_1",
+            data: [
+                {
+                    name: "medal_a",
+                    data: [
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7,
+                        8
+                    ]
+                },
+                {
+                    name: "medal_b",
+                    data: [
+                        2,
+                        4,
+                        6,
+                        8,
+                        1,
+                        3,
+                        5,
+                        7
+                    ]
+                },
             ]
         },
         {
-            "medalname": "medalname_2",
-            "medalname_kr": "medalname_2_kr",
-            "medaldata": [
-                2,
-                3,
-                4,
-                5,
-                6,
-                1,
-                2,
-                3
+            name: "package_2",
+            data: [
+                {
+                    name: "medal_c",
+                    data: [
+                        9,
+                        8,
+                        7,
+                        6,
+                        5,
+                        4,
+                        3,
+                        2
+                    ]
+                }
             ]
-        },
-    ],
-    "medal_package_b": [
-        {
-            "medalname": "medalname_3",
-            "medalname_kr": "medalname_3_kr",
-            "medaldata": [
-                1,
-                2,
-                4,
-                5,
-                1,
-                7,
-                2,
-                6
-            ]
-        },
-    ],
+        }
+    ]
 }
