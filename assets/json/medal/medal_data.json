@@ -2,9 +2,11 @@ Params = {
     packages: [
         {
             name: "package_1",
+            name_kr: "패키지_1",
             data: [
                 {
                     name: "medal_a",
+                    name_kr: "메달_a",
                     data: [
                         1,
                         2,
@@ -18,6 +20,7 @@ Params = {
                 },
                 {
                     name: "medal_b",
+                    name_kr: "메달_b",
                     data: [
                         2,
                         4,
@@ -33,9 +36,11 @@ Params = {
         },
         {
             name: "package_2",
+            name_kr: "패키지_2",
             data: [
                 {
                     name: "medal_c",
+                    name_kr: "메달_c",
                     data: [
                         9,
                         8,

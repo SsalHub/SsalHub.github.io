@@ -1,0 +1,17 @@
+.medal_package {
+    word-break: break-all;
+    max-width: 140px;
+    min-width: 140px;
+}
+
+.medal_name {
+    word-break: break-all;
+    max-width: 140px;
+    min-width: 140px;
+}
+
+.medal_data {
+    word-break: break-all;
+    max-width: 80px;
+    min-width: 80px;
+}
