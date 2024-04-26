@@ -20,17 +20,19 @@
 
 .tooltip_container .tooltip {
     visibility: hidden;
+    position: absolute;
+
     width: 0px;
     height: 0px;
 }
 
 .tooltip_container:hover .tooltip {
-    visibility: visible;
-    z-index: 1;
+    /* visibility: visible; */
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(50%, 50%);
+    z-index: 1;
 
     width: 250px;
     height: 250px;
@@ -40,36 +42,37 @@
     color: #000;
 }
 
-.tooltip_container:hover .tooltip .tooltip_header {
+
+.tooltip_header {
     width: 100%;
     height: 40%;
 }
 
-.tooltip_container:hover .tooltip .tooltip_header div {
+.tooltip_header div {
     text-align: left;
     width: 50%;
     height: 100%;
 }
 
-.tooltip_container:hover .tooltip .tooltip_header label {
+.tooltip_header label {
     text-align: left;
     width: 50%;
     height: 100%;
     margin-top: 3%;
 }
 
-.tooltip_container:hover.tooltip .tooltip_header img {
+.tooltip_header img {
     width: 70px;
     height: 70px;
 }
 
-.tooltip_container:hover.tooltip .tooltip_article {
+.tooltip_article {
     width: 100%;
     height: 50%;
     text-align: left;
 }
 
-.tooltip_container:hover .tooltip .tooltip_article fieldset {
+.tooltip_article fieldset {
     width: 80%;
     border-style: solid;
     border-color: #CDCDCD;
@@ -77,49 +80,49 @@
     border-radius: 0.7em;
 }
 
-.tooltip_container:hover .tooltip .tooltip_article fieldset legend {
+.tooltip_article fieldset legend {
     font-size: 70%;
     color: #CDCDCD;
 }
 
-.tooltip_container:hover .tooltip .tooltip_article tbody {
+.tooltip_article tbody {
     clear: both;
     width: 90%;
     margin: -3% auto auto auto;
 }
 
-.tooltip_container:hover .tooltip .tooltip_article tbody .gray_row {
+.tooltip_article tbody tr:nth-child(odd) {
     background-color: #CDCDCD;
 }
 
-.tooltip_container:hover .tooltip .tooltip_article tbody .white_row {
+.tooltip_article tbody tr:nth-child(even) {
     background-color: #FFF;
 }
 
-.tooltip_container:hover .tooltip .tooltip_article tbody tr td {
+.tooltip_article tbody tr td {
     width: 50%;
-    font-size: 80%;
+    font-size: 0.7rem;
 }
 
-.tooltip_container:hover .tooltip .tooltip_article tbody tr .data {
+.tooltip_article tbody tr .data .data_type {
     color: #000;
     font-weight: 1000;
 }
 
-.tooltip_container:hover .tooltip .tooltip_article tbody tr .data font {
+.tooltip_article tbody tr .data .data_text {
     color: #298035;
 }
 
-.tooltip_container:hover .tooltip .tooltip_article tbody tr .no_data {
+.tooltip_article tbody tr .no_data {
     color: #808080
 }
 
-.tooltip_container:hover .tooltip .tooltip_footer {
+.tooltip_footer {
     justify-content: start;
     margin: 0 6% 0 6%;
 }
 
-.tooltip_container:hover .tooltip .tooltip_footer span {
+.tooltip_footer span {
     color: #808080;
     text-align: left;
     font-size: 50%;

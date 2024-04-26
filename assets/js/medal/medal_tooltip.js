@@ -48,47 +48,31 @@ function appendTooltip(parentElement, medalName, medalName_kr, dataList) {
         document.createElement("tr"),
         document.createElement("tr")
     ];
-    // i == 0
-    var i = 0;
-    // tr.join(document.createElement("tr"));
-    tr[i].setAttribute("class", "gray_row");
-    tr[i].innerHTML =
+    // tr[0].setAttribute("class", "gray_row");
+    tr[0].innerHTML =
         getTableData("무기스킬", dataList[4]) +
         getTableData("기본공격력", dataList[0]);
-    tbody.append(tr[i]);
-    // i == 1
-    i += 1;
-    // tr.join(createElement("tr"));
-    tr[i].setAttribute("class", "whilte_row");
-    tr[i].innerHTML =
+    tbody.append(tr[0]);
+    // tr == 1
+    // tr[1].setAttribute("class", "whilte_row");
+    tr[1].innerHTML =
         getTableData("갑옷스킬", dataList[5]) +
         getTableData("기본방어력", dataList[1]);
-    tbody.append(tr[i]);
-    // i == 2
-    i += 1;
-    // tr.join(createElement("tr"));
-    tr[i].setAttribute("class", "gray_row");
-    tr[i].innerHTML =
+    tbody.append(tr[1]);
+    // tr == 2
+    // tr[2].setAttribute("class", "gray_row");
+    tr[2].innerHTML =
         getTableData("투구스킬", dataList[6]) +
         getTableData("이동속도", dataList[2]);
-    tbody.append(tr[i]);
-    // i == 3
-    i += 1;
-    // tr.join(createElement("tr"));
-    tr[i].setAttribute("class", "whilte_row");
-    tr[i].innerHTML =
+    tbody.append(tr[2]);
+    // tr == 3
+    // tr[3].setAttribute("class", "whilte_row");
+    tr[3].innerHTML =
         getTableData("망토스킬", dataList[7]) +
         getTableData("드랍피해감소", dataList[3]);
-    tbody.append(tr[i]);
+    tbody.append(tr[3]);
     fieldset.append(tbody);
     tooltipArticle.append(fieldset);
-
-
-
-    parentElement.addEventListener("mousemove", (e) => {
-        tooltip.style.left = (e.clientX - 500) + "px";
-        tooltip.style.top = (e.clientY - 650) + "px";
-    });
 
     tooltip.append(tooltipHeader);
     tooltip.append(tooltipArticle);
@@ -96,24 +80,18 @@ function appendTooltip(parentElement, medalName, medalName_kr, dataList) {
     inner_container.append(tooltip);
 
     parentElement.append(tooltip);
+    return tooltip;
 }
-
-
-
 
 function getTableData(dataType, data) {
     if (data == "" || data == "0") {
         return '<td class="no_data">' + dataType + "</td>";
     } else if (data[0] != "-") {
         data = "+" + data;
-        return '<td class="data">' + dataType + "<font>" + data + "</font></td>";
+        return '<td class="data"><font class="data_type">' + dataType + '</font><font class="data_text">' + data + '</font></td>';
     }
     return "Error!";
 }
-
-
-
-
 
 
 
