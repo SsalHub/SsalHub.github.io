@@ -7,13 +7,6 @@
  * @param {Object} dataList medal data in array obj
  */
 function appendTooltip(parentElement, medalName, medalName_kr, dataList) {
-    // set containers
-    let container = document.createElement("div");
-    container.className = "tooltip_container";
-    let inner_container = document.createElement("div");
-    inner_container.className = "tooltip_inner_container";
-    container.append(inner_container);
-
     // Init Variables
     let tooltip = document.createElement("div");
     tooltip.className = "tooltip";
@@ -77,12 +70,19 @@ function appendTooltip(parentElement, medalName, medalName_kr, dataList) {
     tooltip.append(tooltipHeader);
     tooltip.append(tooltipArticle);
     //   tooltip.append(tooltipFooter);
-    inner_container.append(tooltip);
 
     parentElement.append(tooltip);
-    return tooltip;
+    parentElement.addEventListener("mousemove", (e) => {
+        tooltip.style.left = (e.offsetX + 50) + "px";
+        tooltip.style.top = (e.offsetY - 120) + "px";
+    });
 }
 
+/**
+ * Get innerHTML Data With Medal Data/DataType 
+ * @param {String} dataType medal data type
+ * @param {String} data medal data
+ */
 function getTableData(dataType, data) {
     if (data == "" || data == "0") {
         return '<td class="no_data">' + dataType + "</td>";
@@ -96,6 +96,13 @@ function getTableData(dataType, data) {
 
 
 
+
+
+
+
+
+
+
 /**
  * Not Used
  * @param {Element} parentElement parent element 
@@ -104,12 +111,6 @@ function getTableData(dataType, data) {
  * @param {Object} dataList medal data in array obj
  */
 function openTooltip(parentElement, medalName, medalName_kr, dataList) {
-    // set containers
-    let container = document.createElement("div");
-    container.className = "tooltip_container";
-    let inner_container = document.createElement("div");
-    inner_container.className = "tooltip_inner_container";
-    container.append(inner_container);
 
     // Init Variables
     let tooltip = document.createElement("div");
@@ -214,7 +215,6 @@ function openTooltip(parentElement, medalName, medalName_kr, dataList) {
     tooltip.append(tooltipHeader);
     tooltip.append(tooltipArticle);
     //   tooltip.append(tooltipFooter);
-    inner_container.append(tooltip);
 
     parentElement.append(tooltip);
 }
