@@ -73,8 +73,8 @@ function appendTooltip(parentElement, medalName, medalName_kr, dataList) {
 
     parentElement.append(tooltip);
     parentElement.addEventListener("mousemove", (e) => {
-        tooltip.style.left = (e.offsetX + 50) + "px";
-        tooltip.style.top = (e.offsetY - 120) + "px";
+        tooltip.style.left = (e.pageX + 50) + "px"; // x pos by page
+        tooltip.style.top = (e.pageY - 120) + "px"; // y pos by page
     });
 }
 

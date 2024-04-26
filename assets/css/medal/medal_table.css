@@ -1,17 +1,45 @@
-.medal_package {
-    word-break: break-all;
-    max-width: 140px;
-    min-width: 140px;
+.medal_list {
+    max-width: 1000px;
 }
 
+.medal_list tr:nth-child(2n+3) {
+    background-color: #9999FF;
+}
+
+.medal_list tr:nth-child(even) {
+    background-color: #FF9999;
+}
+
+.th_medal_package,
+.th_medal_name,
+.medal_package,
 .medal_name {
     word-break: break-all;
-    max-width: 140px;
-    min-width: 140px;
+    max-width: 100px;
+    min-width: 100px;
 }
 
+.th_medal_data,
 .medal_data {
     word-break: break-all;
-    max-width: 80px;
-    min-width: 80px;
+    max-width: 100px;
+    min-width: 100px;
+}
+
+.th_medal_package,
+.th_medal_name,
+.th_medal_data {
+    padding: 0 5px 0 5px;
+    line-height: 1rem;
+    max-height: 50px;
+    min-height: 50px;
+    font-size: 0.6rem;
+}
+
+.medal_package,
+.medal_name,
+.medal_data {
+    max-height: 35px;
+    min-height: 35px;
+    font-size: 0.6rem;
 }

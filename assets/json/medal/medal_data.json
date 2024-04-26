@@ -1,58 +1,358 @@
 Params = {
     packages: [
         {
-            name: "package_1",
-            name_kr: "패키지_1",
+            name: "Mark Series",
+            name_kr: "증표 시리즈",
             data: [
                 {
-                    name: "medal_a",
-                    name_kr: "메달_a",
+                    name: "Mark of Kirin",
+                    name_kr: "광룡의 증표",
                     data: [
-                        1,
-                        2,
-                        3,
-                        4,
-                        5,
-                        6,
-                        7,
-                        8
+                        8,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
                     ]
                 },
                 {
-                    name: "medal_b",
-                    name_kr: "메달_b",
+                    name: "Mark of Guardian",
+                    name_kr: "수호의 증표",
                     data: [
-                        2,
-                        4,
-                        6,
+                        0,
                         8,
-                        1,
-                        3,
-                        5,
-                        7
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ]
+                },
+                {
+                    name: "Mark of Typhoon",
+                    name_kr: "바람의 증표",
+                    data: [
+                        0,
+                        0,
+                        8,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ]
+                },
+                {
+                    name: "Mark of Protection",
+                    name_kr: "보호의 증표",
+                    data: [
+                        0,
+                        0,
+                        0,
+                        8,
+                        0,
+                        0,
+                        0,
+                        0
+                    ]
+                },
+                {
+                    name: "Mark of Dragon",
+                    name_kr: "청룡의 증표",
+                    data: [
+                        0,
+                        0,
+                        0,
+                        0,
+                        8,
+                        0,
+                        0,
+                        0
+                    ]
+                },
+                {
+                    name: "Mark of Tiger",
+                    name_kr: "백호의 증표",
+                    data: [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        8,
+                        0,
+                        0
+                    ]
+                },
+                {
+                    name: "Mark of Phoenix",
+                    name_kr: "주작의 증표",
+                    data: [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        8,
+                        0
+                    ]
+                },
+                {
+                    name: "Mark of Turtle",
+                    name_kr: "현무의 증표",
+                    data: [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        8
                     ]
                 },
             ]
         },
         {
-            name: "package_2",
-            name_kr: "패키지_2",
+            name: "K Series",
+            name_kr: "K 시리즈",
             data: [
                 {
-                    name: "medal_c",
-                    name_kr: "메달_c",
+                    name: "Kirin K",
+                    name_kr: "광룡의 K",
                     data: [
-                        9,
                         8,
-                        7,
-                        6,
-                        5,
-                        4,
-                        3,
-                        2
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
                     ]
-                }
+                },
+                {
+                    name: "Guardian K",
+                    name_kr: "수호의 K",
+                    data: [
+                        0,
+                        8,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ]
+                },
+                {
+                    name: "Typhoon K",
+                    name_kr: "바람의 K",
+                    data: [
+                        0,
+                        0,
+                        8,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ]
+                },
+                {
+                    name: "Protection K",
+                    name_kr: "보호의 K",
+                    data: [
+                        0,
+                        0,
+                        0,
+                        8,
+                        0,
+                        0,
+                        0,
+                        0
+                    ]
+                },
+                {
+                    name: "Dragon K",
+                    name_kr: "청룡의 K",
+                    data: [
+                        0,
+                        0,
+                        0,
+                        0,
+                        8,
+                        0,
+                        0,
+                        0
+                    ]
+                },
+                {
+                    name: "Tiger K",
+                    name_kr: "백호의 K",
+                    data: [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        8,
+                        0,
+                        0
+                    ]
+                },
+                {
+                    name: "Phoenix K",
+                    name_kr: "주작의 K",
+                    data: [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        8,
+                        0
+                    ]
+                },
+                {
+                    name: "Turtle K",
+                    name_kr: "현무의 K",
+                    data: [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        8
+                    ]
+                },
             ]
-        }
+        },
+        {
+            name: "Flame Series",
+            name_kr: "불꽃 시리즈",
+            data: [
+                {
+                    name: "Kirin Flame",
+                    name_kr: "광룡의 불꽃",
+                    data: [
+                        7,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ]
+                },
+                {
+                    name: "Guardian Flame",
+                    name_kr: "수호의 불꽃",
+                    data: [
+                        0,
+                        7,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ]
+                },
+                {
+                    name: "Typhoon Flame",
+                    name_kr: "바람의 불꽃",
+                    data: [
+                        0,
+                        0,
+                        7,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ]
+                },
+                {
+                    name: "Protection Flame",
+                    name_kr: "보호의 불꽃",
+                    data: [
+                        0,
+                        0,
+                        0,
+                        7,
+                        0,
+                        0,
+                        0,
+                        0
+                    ]
+                },
+                {
+                    name: "Dragon Flame",
+                    name_kr: "청룡의 불꽃",
+                    data: [
+                        0,
+                        0,
+                        0,
+                        0,
+                        7,
+                        0,
+                        0,
+                        0
+                    ]
+                },
+                {
+                    name: "Tiger Flame",
+                    name_kr: "백호의 불꽃",
+                    data: [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        7,
+                        0,
+                        0
+                    ]
+                },
+                {
+                    name: "Phoenix Flame",
+                    name_kr: "주작의 불꽃",
+                    data: [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        7,
+                        0
+                    ]
+                },
+                {
+                    name: "Turtle Flame",
+                    name_kr: "현무의 불꽃",
+                    data: [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        7
+                    ]
+                },
+            ]
+        },
     ]
 }
