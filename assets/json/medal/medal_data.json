@@ -6,7 +6,7 @@ Params = {
             data: [
                 {
                     name: "Mark of Kirin",
-                    name_kr: "광룡의 증표",
+                    name_kr: "파괴의 증표",
                     data: [
                         8,
                         0,
@@ -124,7 +124,7 @@ Params = {
             data: [
                 {
                     name: "Kirin K",
-                    name_kr: "광룡의 K",
+                    name_kr: "파괴의 K",
                     data: [
                         8,
                         0,
@@ -242,7 +242,7 @@ Params = {
             data: [
                 {
                     name: "Kirin Flame",
-                    name_kr: "광룡의 불꽃",
+                    name_kr: "파괴의 불꽃",
                     data: [
                         7,
                         0,
