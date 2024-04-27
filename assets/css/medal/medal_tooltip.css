@@ -1,22 +1,25 @@
 /*
-    parent container 1
+    parent container
 */
 #medal_data_zone {
     display: flex;
-    justify-content: center;
     flex-direction: row;
+    justify-content: center;
 }
 
-/*
-    parent container 2
-*/
 #medal_list {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 85%;
     text-align: center;
     margin-top: 50px;
     font-size: 0.9rem;
+}
+
+.tooltip_container {
+    position: relative;
+    display: block;
 }
 
 /*
@@ -141,17 +144,17 @@
     white-space: nowrap;
 }
 
-.tooltip_article tbody tr td.data font.data_type {
+.tooltip_article tbody tr td font.data_type {
     color: #000;
     font-weight: bold;
 }
 
-.tooltip_article tbody tr td.data font.data_text {
+.tooltip_article tbody tr td font.data_text {
     color: #298035;
     font-weight: bold;
 }
 
-.tooltip_article tbody tr td.no_data font {
+.tooltip_article tbody tr td font {
     color: #808080;
     font-weight: lighter;
 }

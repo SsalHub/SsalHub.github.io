@@ -72,26 +72,26 @@ function initTooltipArticle(dataList) {
     ];
     // tr[0].setAttribute("class", "gray_row");
     tr[0].innerHTML =
-        getTableData("무기스킬", dataList[4]) +
-        getTableData("기본공격력", dataList[0]);
+        '<td>' + getTooltipTableData("무기스킬", dataList[4]) + '</td>' +
+        '<td>' + getTooltipTableData("기본공격력", dataList[0]) + '</td>';
     tbody.append(tr[0]);
     // tr == 1
     // tr[1].setAttribute("class", "whilte_row");
     tr[1].innerHTML =
-        getTableData("갑옷스킬", dataList[5]) +
-        getTableData("기본방어력", dataList[1]);
+        '<td>' + getTooltipTableData("갑옷스킬", dataList[5]) + '</td>' +
+        '<td>' + getTooltipTableData("기본방어력", dataList[1]) + '</td>';
     tbody.append(tr[1]);
     // tr == 2
     // tr[2].setAttribute("class", "gray_row");
     tr[2].innerHTML =
-        getTableData("투구스킬", dataList[6]) +
-        getTableData("이동속도", dataList[2]);
+        '<td>' + getTooltipTableData("투구스킬", dataList[6]) + '</td>' +
+        '<td>' + getTooltipTableData("이동속도", dataList[2]) + '</td>';
     tbody.append(tr[2]);
     // tr == 3
     // tr[3].setAttribute("class", "whilte_row");
     tr[3].innerHTML =
-        getTableData("망토스킬", dataList[7]) +
-        getTableData("드랍피해감소", dataList[3]);
+        '<td>' + getTooltipTableData("망토스킬", dataList[7]) + '</td>' +
+        '<td>' + getTooltipTableData("드랍피해감소", dataList[3]) + '</td>';
     tbody.append(tr[3]);
     fieldset.append(tbody);
     tooltipArticle.append(fieldset);
@@ -101,14 +101,15 @@ function initTooltipArticle(dataList) {
 /**
  * Get innerHTML String 
  * @param {String} dataType type of medal data
- * @param {String} data medal medal
+ * @param {String} data medal data
  */
-function getTableData(dataType, data) {
+function getTooltipTableData(dataType, data) {
     if (data == "" || data == "0") {
-        return '<td class="no_data"><font>' + dataType + "</font></td>";
+        // no data
+        return '<font>' + dataType + '</font>';
     } else if (data[0] != "-") {
         data = "+" + data;
-        return '<td class="data"><font class="data_type">' + dataType + '</font><font class="data_text">' + data + '</font></td>';
+        return '<font class="data_type">' + dataType + '</font><font class="data_text">' + data + '</font>';
     }
     return "Error!";
 }

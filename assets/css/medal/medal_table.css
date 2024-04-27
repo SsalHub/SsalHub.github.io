@@ -1,36 +1,19 @@
-.medal_list {
+/*
+    parent table
+*/
+#medal_list {
     display: flex;
-    flex-direction: column;
+    flex-flow: column nowrap;
+    justify-content: center;
     max-width: 1000px;
 }
 
-.medal_list tr:nth-child(2n+3) {
-    background-color: #9999FF;
-}
-
-.medal_list tr:nth-child(even) {
-    background-color: #FF9999;
-}
-
-.th_medal_package,
-.th_medal_name,
-.medal_package,
-.medal_name {
-    word-break: break-all;
-    max-width: 100px;
-    min-width: 100px;
-}
-
-.th_medal_data,
-.medal_data {
-    word-break: break-all;
-    max-width: 100px;
-    min-width: 100px;
-}
-
-.th_medal_package,
-.th_medal_name,
-.th_medal_data {
+/*
+    basic css of th tag
+*/
+th.medal_package,
+th.medal_name,
+th.medal_data {
     padding: 0 5px 0 5px;
     line-height: 1rem;
     max-height: 50px;
@@ -38,10 +21,74 @@
     font-size: 0.6rem;
 }
 
-.medal_package,
-.medal_name,
-.medal_data {
+/*basic css of td tag
+*/
+td.medal_package,
+td.medal_name,
+td.medal_data {
     max-height: 35px;
     min-height: 35px;
     font-size: 0.6rem;
+}
+
+/*
+    basic css of package & medal name
+*/
+th.medal_package,
+th.medal_name,
+td.medal_package,
+td.medal_name {
+    word-break: break-all;
+    max-width: 100px;
+    min-width: 100px;
+}
+
+th.medal_package {
+    background-color: #9999FF;
+}
+
+td.medal_package {
+    background-color: #CCCCFF;
+}
+
+th.medal_name {
+    background-color: #FF9999;
+}
+
+td.medal_name {
+    background-color: #FFCCCC;
+}
+
+/*
+    basic css of medal data
+*/
+th.medal_data,
+td.medal_data {
+    word-break: break-all;
+    max-width: 100px;
+    min-width: 100px;
+}
+
+th.medal_data {
+    background-color: #CCE5FF;
+}
+
+th.medal_data:hover {
+    background-color: #99CCFF;
+}
+
+td.medal_data-no_exists {
+    background-color: #FFFFFF;
+}
+
+td.medal_data-no_exists:hover {
+    background-color: #E0E0E0;
+}
+
+td.medal_data-exists {
+    background-color: #99FFFF;
+}
+
+td.medal_data-exists:hover {
+    background-color: #CCFFFF;
 }
