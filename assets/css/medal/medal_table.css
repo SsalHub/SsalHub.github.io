@@ -1,6 +1,9 @@
-/*
-    parent table
-*/
+/* variable class names */
+.no_hover {
+    pointer-events: none;
+}
+
+/* parent table */
 #medal_list {
     display: flex;
     flex-flow: column nowrap;
@@ -8,10 +11,8 @@
     max-width: 1000px;
 }
 
-/*
-    basic css of th tag
-*/
-th.medal_package,
+/* basic css of th tag */
+th.medal_series,
 th.medal_name,
 th.medal_data {
     padding: 0 5px 0 5px;
@@ -21,9 +22,8 @@ th.medal_data {
     font-size: 0.6rem;
 }
 
-/*basic css of td tag
-*/
-td.medal_package,
+/* basic css of td tag */
+td.medal_series,
 td.medal_name,
 td.medal_data {
     max-height: 35px;
@@ -31,23 +31,21 @@ td.medal_data {
     font-size: 0.6rem;
 }
 
-/*
-    basic css of package & medal name
-*/
-th.medal_package,
+/* basic css of series & medal name */
+th.medal_series,
 th.medal_name,
-td.medal_package,
+td.medal_series,
 td.medal_name {
     word-break: break-all;
     max-width: 100px;
     min-width: 100px;
 }
 
-th.medal_package {
+th.medal_series {
     background-color: #9999FF;
 }
 
-td.medal_package {
+td.medal_series {
     background-color: #CCCCFF;
 }
 
@@ -59,9 +57,7 @@ td.medal_name {
     background-color: #FFCCCC;
 }
 
-/*
-    basic css of medal data
-*/
+/* basic css of medal data */
 th.medal_data,
 td.medal_data {
     word-break: break-all;

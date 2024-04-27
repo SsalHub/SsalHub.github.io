@@ -1,5 +1,5 @@
 Params = {
-    packages: [
+    series: [
         {
             name: "Mark Series",
             name_kr: "증표 시리즈",
