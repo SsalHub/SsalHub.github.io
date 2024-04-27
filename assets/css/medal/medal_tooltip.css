@@ -1,9 +1,15 @@
+/*
+    parent container 1
+*/
 #medal_data_zone {
     display: flex;
     justify-content: center;
     flex-direction: row;
 }
 
+/*
+    parent container 2
+*/
 #medal_list {
     display: flex;
     flex-direction: column;
@@ -13,11 +19,9 @@
     font-size: 0.9rem;
 }
 
-.tooltip_container {
-    /* position: relative; */
-    display: block;
-}
-
+/*
+    tooltip div, when no hover
+*/
 .tooltip_container .tooltip {
     visibility: hidden;
     position: absolute;
@@ -28,46 +32,62 @@
     background-color: #FFF;
     color: #000;
     width: 250px;
-    height: 250px;
+    height: 330px;
 }
 
+/*
+    tooltip div, when hover
+*/
 .tooltip_container:hover .tooltip {
     visibility: visible;
-    left: 150px;
-    top: 20px;
 }
 
+/*
+    tooltip header
+*/
 .tooltip_header {
-    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2% 0 2%;
     height: 40%;
 }
 
-.tooltip_header div {
-    text-align: left;
-    width: 50%;
-    height: 100%;
-}
-
-.tooltip_header label {
-    text-align: left;
-    width: 50%;
-    height: 100%;
-    margin-top: 3%;
-}
-
 .tooltip_header img {
-    width: 70px;
-    height: 70px;
+    margin: 3% 0 0 4%;
+    padding: 0;
+    width: 40%;
 }
 
+.tooltip_header span {
+    margin: 0 0 0 2.5%;
+    padding: 0;
+    width: 50%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+/*
+    tooltip article - fieldset
+*/
 .tooltip_article {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin: -6% 0 0 0 !important;
+    padding: 0;
     width: 100%;
-    height: 50%;
+    height: 60%;
     text-align: left;
 }
 
 .tooltip_article fieldset {
-    width: 80%;
+    margin: 0;
+    padding: 0;
+    width: 90%;
     border-style: solid;
     border-color: #CDCDCD;
     border-width: 2px 0 0 0;
@@ -75,14 +95,14 @@
 }
 
 .tooltip_article fieldset legend {
-    font-size: 70%;
+    font-size: 0.8rem;
     color: #CDCDCD;
 }
 
 .tooltip_article tbody {
     clear: both;
     width: 90%;
-    margin: -3% auto auto auto;
+    margin: -5% auto auto auto;
 }
 
 .tooltip_article tbody tr:nth-child(odd) {
@@ -93,24 +113,52 @@
     background-color: #FFF;
 }
 
+/*
+    tooltip article - table body
+*/
+.tooltip_article tbody {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+.tooltip_article tbody tr {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+}
+
 .tooltip_article tbody tr td {
     width: 50%;
-    font-size: 0.7rem;
+
 }
 
-.tooltip_article tbody tr .data .data_type {
+.tooltip_article tbody tr td {
+    font-size: 0.6rem;
+    line-height: 0.7rem;
+    white-space: nowrap;
+}
+
+.tooltip_article tbody tr td.data font.data_type {
     color: #000;
-    font-weight: 1000;
+    font-weight: bold;
 }
 
-.tooltip_article tbody tr .data .data_text {
+.tooltip_article tbody tr td.data font.data_text {
     color: #298035;
+    font-weight: bold;
 }
 
-.tooltip_article tbody tr .no_data {
-    color: #808080
+.tooltip_article tbody tr td.no_data font {
+    color: #808080;
+    font-weight: lighter;
 }
 
+/*
+    tooltip article
+*/
 .tooltip_footer {
     justify-content: start;
     margin: 0 6% 0 6%;
@@ -119,5 +167,5 @@
 .tooltip_footer span {
     color: #808080;
     text-align: left;
-    font-size: 50%;
+    font-size: 0.5rem;
 }
