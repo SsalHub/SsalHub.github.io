@@ -9,6 +9,10 @@
     flex-flow: column nowrap;
     justify-content: center;
     max-width: 1000px;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 0.9rem;
+    border: 0;
 }
 
 /* basic css of th tag */
@@ -20,6 +24,9 @@ th.medal_data {
     max-height: 50px;
     min-height: 50px;
     font-size: 0.6rem;
+    border: 0 !important;
+    color: #FFFFFF;
+    background-color: #036;
 }
 
 /* basic css of td tag */
@@ -29,6 +36,11 @@ td.medal_data {
     max-height: 35px;
     min-height: 35px;
     font-size: 0.6rem;
+    border-top: 0 !important;
+    border-bottom: 1px solid #000000 !important;
+    border-left: 0 !important;
+    border-right: 0 !important;
+
 }
 
 /* basic css of series & medal name */
@@ -41,21 +53,13 @@ td.medal_name {
     min-width: 100px;
 }
 
-th.medal_series {
+/* td.medal_series {
     background-color: #9999FF;
-}
+} */
 
-td.medal_series {
-    background-color: #CCCCFF;
-}
-
-th.medal_name {
+/* td.medal_name {
     background-color: #FF9999;
-}
-
-td.medal_name {
-    background-color: #FFCCCC;
-}
+} */
 
 /* basic css of medal data */
 th.medal_data,
@@ -65,26 +69,26 @@ td.medal_data {
     min-width: 100px;
 }
 
-th.medal_data {
+/* th.medal_data {
     background-color: #CCE5FF;
-}
+} */
 
 th.medal_data:hover {
     background-color: #99CCFF;
 }
 
 td.medal_data-no_exists {
-    background-color: #FFFFFF;
+    background-color: #f8f8f8;
 }
 
 td.medal_data-no_exists:hover {
-    background-color: #E0E0E0;
+    background-color: #f1f1f1;
 }
 
 td.medal_data-exists {
-    background-color: #99FFFF;
+    background-color: #CCFFFF;
 }
 
 td.medal_data-exists:hover {
-    background-color: #CCFFFF;
+    background-color: #99FFFF;
 }
