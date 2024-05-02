@@ -5,78 +5,103 @@
 {% include head.html %}
 
 <body class="has-push-menu">
+    {% include svg-icons.html %}
     {% include header.html %}
 
     <!-- <section class="post {% if site.two_columns_layout %}two-columns{% else %}one-column{% endif %}"> -->
-    <div class="post one-column">
-        <article role="article" class="post-content">
-            <h1 class="post-title">{{ page.title }}</h1>
-            <p class="post-subtitle">{{ page.subtitle }}</p>
+    <div class="post_custom">
 
-            {% if page.image and paginator.activated == nil %}
-            <img src="{{ page.image }}" alt="Featured image" class="post-cover" style="max-width:1080px;">
-            {% endif %}
+        <h1 class="page_title">{{ page.title }}</h1>
+        <p class="page_subtitle">{{ page.subtitle }}</p>
 
-            {% include pagination-post.html progressBar=true %}
+        {% if page.image and paginator.activated == nil %}
+        <img src="{{ page.image }}" alt="Featured image" class="post-cover" style="max-width:1080px;">
+        {% endif %}
 
-            {% include toc.html %}
 
-            {{ content }}
+        {% include pagination-post.html progressBar=true %}
 
-            {% include pagination-post.html %}
-        </article>
+        {% include toc.html %}
 
+        {{ content }}
+
+        {% include pagination-post.html %}
 
 
     </div>
 
 
     <script type="application/ld+json">
-        {
-            "@context": "http://schema.org",
-            "@type": "BlogPosting",
-            "name": "{{ page.title }}",
-            "headline": "{{ page.subtitle }}",
-            "description": "{{ page.description }}",
-            "image": "{{ page.image }}",
-            "url": "{{ page.url | prepend: site.baseurl | prepend: site.url }}",
-            "articleBody": "{{ content | strip_html | xml_escape | textilize }}",
-            "wordcount": "{{ content | number_of_words }}",
-            "inLanguage": "{{ site.language }}",
-            "dateCreated": "{{ page.date | date: '%Y-%m-%d/' }}",
-            "datePublished": "{{ page.date | date: '%Y-%m-%d/' }}",
-            "dateModified": "{{ page.date | date: '%Y-%m-%d/' }}",
-            "author": {
-                "@type": "Person",
-                "name": "{{ author.display_name }}",
-                {% if author.photo %}
-                "image": "{{ author.photo }}",
-                {% else %}
-                "image": {{ "/assets/img/user.jpg" | prepend: site.baseurl | prepend: site.url }},
-                {% endif %}
-                "jobTitle": "{{ author.position }}",
-                "url": "{{ author.url | prepend: site.baseurl | prepend: site.url }}",
-                "sameAs": [
-                    {{ author_urls | split: "," | join: "," }}
-                ]
-            },
-            "publisher": {
-                "@type": "Organization",
-                "name": "{{ site.name }}",
-                "url": "{{ site.url }}{{site.baseurl}}/",
-                "logo": {
-                    "@type": "ImageObject",
-                    "url": "{{ site.url }}{{site.baseurl}}/assets/img/blog-image.png",
-                    "width": "600",
-                    "height": "315"
-                }
-            },
-            "mainEntityOfPage": "True",
-            "genre": "{{ page.category }}",
-            "articleSection": "{{ page.category }}",
-            "keywords": [{{ page.tags | join: '","' | append: '"' | prepend: '"' }}]
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "name": "{{ page.title }}",
+        "headline": "{{ page.subtitle }}",
+        "description": "{{ page.description }}",
+        "image": "{{ page.image }}",
+        "url": "{{ page.url | prepend: site.baseurl | prepend: site.url }}",
+        "articleBody": "{{ content | strip_html | xml_escape | textilize }}",
+        "wordcount": "{{ content | number_of_words }}",
+        "inLanguage": "{{ site.language }}",
+        "dateCreated": "{{ page.date | date: '%Y-%m-%d/' }}",
+        "datePublished": "{{ page.date | date: '%Y-%m-%d/' }}",
+        "dateModified": "{{ page.date | date: '%Y-%m-%d/' }}",
+        "author": {
+            "@type": "Person",
+            "name": "{{ author.display_name }}",
+            {% if author.photo %}
+            "image": "{{ author.photo }}",
+            {% else %}
+            "image": {{ "/assets/img/user.jpg" | prepend: site.baseurl | prepend: site.url }},
+            {% endif %}
+            "jobTitle": "{{ author.position }}",
+            "url": "{{ author.url | prepend: site.baseurl | prepend: site.url }}",
+            "sameAs": [
+                {{ author_urls | split: "," | join: "," }}
+            ]
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "{{ site.name }}",
+            "url": "{{ site.url }}{{site.baseurl}}/",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "{{ site.url }}{{site.baseurl}}/assets/img/blog-image.png",
+                "width": "600",
+                "height": "315"
+            }
+        },
+        "mainEntityOfPage": "True",
+        "genre": "{{ page.category }}",
+        "articleSection": "{{ page.category }}",
+        "keywords": [{{ page.tags | join: '","' | append: '"' | prepend: '"' }}]
+    }
+    </script>
+
+    <style>
+        .post_custom {
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
         }
-        </script>
+
+        .page_title {
+            display: block;
+            margin-top: 8rem;
+            margin-bottom: 1rem;
+        }
+
+        .page_subtitle {
+            display: block;
+        }
+
+        .post_custom img {
+            margin-top: 5rem;
+            margin-bottom: 5rem;
+        }
+    </style>
+
 </body>
 
 </html>

@@ -116,12 +116,6 @@ Params = {
                         8
                     ]
                 },
-            ]
-        },
-        {
-            name: "K Series",
-            name_kr: "K 시리즈",
-            data: [
                 {
                     name: "Kirin K",
                     name_kr: "파괴의 K",
@@ -234,12 +228,6 @@ Params = {
                         8
                     ]
                 },
-            ]
-        },
-        {
-            name: "Flame Series",
-            name_kr: "불꽃 시리즈",
-            data: [
                 {
                     name: "Kirin Flame",
                     name_kr: "파괴의 불꽃",
@@ -350,6 +338,488 @@ Params = {
                         0,
                         0,
                         7
+                    ]
+                },
+            ]
+        },
+        {
+            name: "Furious Series",
+            name_kr: "분노 시리즈",
+            data: [
+                {
+                    name: "Furious Lee",
+                    name_kr: "분노의 리",
+                    data: [
+                        9,
+                        0,
+                        10,
+                        0,
+                        0,
+                        0,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    name: "Furious Dark Monk",
+                    name_kr: "분노의 파계승",
+                    data: [
+                        7,
+                        7,
+                        0,
+                        7,
+                        0,
+                        3,
+                        2,
+                        0
+                    ]
+                },
+                {
+                    name: "Furious Zhugeliang",
+                    name_kr: "분노의 제갈량",
+                    data: [
+                        10,
+                        0,
+                        8,
+                        0,
+                        10,
+                        0,
+                        0,
+                        0
+                    ]
+                },
+                {
+                    name: "Furious Chi Master",
+                    name_kr: "분노의 기공사",
+                    data: [
+                        0,
+                        8,
+                        10,
+                        0,
+                        10,
+                        0,
+                        0,
+                        0
+                    ]
+                },
+                {
+                    name: "Furious Michael",
+                    name_kr: "분노의 미카엘",
+                    data: [
+                        2,
+                        0,
+                        8,
+                        8,
+                        0,
+                        5,
+                        5,
+                        0
+                    ]
+                },
+                {
+                    name: "Furious Kumiho",
+                    name_kr: "분노의 구미호",
+                    data: [
+                        0,
+                        8,
+                        8,
+                        0,
+                        0,
+                        0,
+                        6,
+                        8
+                    ]
+                },
+                {
+                    name: "Furious Monk",
+                    name_kr: "분노의 수도승",
+                    data: [
+                        9,
+                        0,
+                        0,
+                        8,
+                        0,
+                        8,
+                        0,
+                        4
+                    ]
+                },
+                {
+                    name: "Furious Devil",
+                    name_kr: "분노의 악마",
+                    data: [
+                        0,
+                        10,
+                        8,
+                        0,
+                        3,
+                        7,
+                        0,
+                        0
+                    ]
+                },
+                {
+                    name: "Furious Titan",
+                    name_kr: "분노의 타이탄",
+                    data: [
+                        8,
+                        0,
+                        0,
+                        10,
+                        10,
+                        0,
+                        0,
+                        0
+                    ]
+                },
+                {
+                    name: "Furious Mysterious Shaman",
+                    name_kr: "분노의 신비술사",
+                    data: [
+                        0,
+                        8,
+                        0,
+                        9,
+                        0,
+                        8,
+                        4,
+                        0
+                    ]
+                },
+                {
+                    name: "Furious Thunder Bird",
+                    name_kr: "분노의 썬더버드",
+                    data: [
+                        0,
+                        9,
+                        9,
+                        0,
+                        10,
+                        0,
+                        0,
+                        0
+                    ]
+                },
+                {
+                    name: "Furious Destroyer",
+                    name_kr: "분노의 파괴자",
+                    data: [
+                        10,
+                        0,
+                        0,
+                        9,
+                        0,
+                        0,
+                        8,
+                        0
+                    ]
+                },
+                {
+                    name: "Furious Jumper",
+                    name_kr: "분노의 점퍼",
+                    data: [
+                        0,
+                        0,
+                        9,
+                        10,
+                        0,
+                        0,
+                        8,
+                        0
+                    ]
+                },
+                {
+                    name: "Furious Engineer",
+                    name_kr: "분노의 엔지니어",
+                    data: [
+                        8,
+                        9,
+                        0,
+                        0,
+                        10,
+                        2,
+                        0,
+                        0
+                    ]
+                },
+                {
+                    name: "Furious Gangrim Doryeong",
+                    name_kr: "분노의 강림도령",
+                    data: [
+                        0,
+                        10,
+                        0,
+                        8,
+                        0,
+                        10,
+                        0,
+                        0
+                    ]
+                },
+                {
+                    name: "Furious Blade",
+                    name_kr: "분노의 블레이드",
+                    data: [
+                        4,
+                        0,
+                        9,
+                        0,
+                        10,
+                        0,
+                        10,
+                        0
+                    ]
+                },
+                {
+                    name: "Furious Matador",
+                    name_kr: "분노의 투우사",
+                    data: [
+                        8,
+                        10,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        10
+                    ]
+                },
+                {
+                    name: "Furious Chemical Army",
+                    name_kr: "분노의 화학병",
+                    data: [
+                        10,
+                        0,
+                        7,
+                        3,
+                        6,
+                        0,
+                        0,
+                        0
+                    ]
+                },
+                {
+                    name: "Furious Mutant",
+                    name_kr: "분노의 뮤턴트",
+                    data: [
+                        0,
+                        9,
+                        9,
+                        0,
+                        6,
+                        0,
+                        0,
+                        4
+                    ]
+                },
+                {
+                    name: "Furious Skady",
+                    name_kr: "분노의 스카디",
+                    data: [
+                        0,
+                        5,
+                        10,
+                        0,
+                        5,
+                        0,
+                        10,
+                        0
+                    ]
+                },
+                {
+                    name: "Furious Vampire",
+                    name_kr: "분노의 뱀파이어",
+                    data: [
+                        10,
+                        0,
+                        0,
+                        10,
+                        0,
+                        5,
+                        0,
+                        0
+                    ]
+                },
+                {
+                    name: "Furious Slasher",
+                    name_kr: "분노의 슬래셔",
+                    data: [
+                        9,
+                        1,
+                        9,
+                        1,
+                        0,
+                        5,
+                        0,
+                        0
+                    ]
+                },
+                {
+                    name: "Furious Alpha",
+                    name_kr: "분노의 초시공전사",
+                    data: [
+                        0,
+                        5,
+                        5,
+                        10,
+                        0,
+                        0,
+                        5,
+                        0
+                    ]
+                },
+                {
+                    name: "Furious Galaxy",
+                    name_kr: "분노의 갤럭시",
+                    data: [
+                        10,
+                        0,
+                        4,
+                        8,
+                        1,
+                        0,
+                        0,
+                        0
+                    ]
+                },
+                {
+                    name: "Furious Striker",
+                    name_kr: "분노의 스트라이커",
+                    data: [
+                        0,
+                        10,
+                        0,
+                        6,
+                        6,
+                        0,
+                        7,
+                        0
+                    ]
+                },
+                {
+                    name: "Furious Chain Magician",
+                    name_kr: "분노의 체인매지션",
+                    data: [
+                        0,
+                        8,
+                        0,
+                        9,
+                        0,
+                        10,
+                        0,
+                        1
+                    ]
+                },
+                {
+                    name: "Furious Succubus",
+                    name_kr: "분노의 서큐버스",
+                    data: [
+                        0,
+                        9,
+                        0,
+                        10,
+                        3,
+                        3,
+                        0,
+                        0
+                    ]
+                },
+                {
+                    name: "Furious Maid",
+                    name_kr: "분노의 메이드",
+                    data: [
+                        10,
+                        0,
+                        10,
+                        0,
+                        1,
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    name: "Furious Flash",
+                    name_kr: "분노의 플래시",
+                    data: [
+                        8,
+                        8,
+                        0,
+                        5,
+                        2,
+                        0,
+                        0,
+                        0
+                    ]
+                },
+                {
+                    name: "Furious Earth Mage",
+                    name_kr: "분노의 어스메이지",
+                    data: [
+                        0,
+                        10,
+                        0,
+                        9,
+                        0,
+                        0,
+                        0,
+                        6
+                    ]
+                },
+                {
+                    name: "Furious Jack O Lantern",
+                    name_kr: "분노의 잭오랜턴",
+                    data: [
+                        0,
+                        2,
+                        10,
+                        7,
+                        3,
+                        3,
+                        0,
+                        0
+                    ]
+                },
+                {
+                    name: "Furious Zeus",
+                    name_kr: "분노의 제우스",
+                    data: [
+                        0,
+                        0,
+                        7,
+                        10,
+                        0,
+                        0,
+                        0,
+                        10
+                    ]
+                },
+                {
+                    name: "Furious Druid",
+                    name_kr: "분노의 드루이드",
+                    data: [
+                        10,
+                        0,
+                        8,
+                        0,
+                        0,
+                        8,
+                        0,
+                        0
+                    ]
+                },
+                {
+                    name: "Furious ESP",
+                    name_kr: "분노의 초능력자",
+                    data: [
+                        0,
+                        0,
+                        10,
+                        9,
+                        0,
+                        0,
+                        5,
+                        0
                     ]
                 },
             ]
