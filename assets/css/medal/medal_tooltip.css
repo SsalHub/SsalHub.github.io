@@ -1,12 +1,4 @@
-/*
-    parent container
-*/
-#medal_data_zone {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
+/* parent container */
 #medal_list {
     display: flex;
     flex-direction: column;
@@ -14,13 +6,10 @@
 }
 
 .tooltip_container {
-    /* position: relative; */
     display: block;
 }
 
-/*
-    tooltip div, when no hover
-*/
+/* tooltip div, when no hover */
 .tooltip_container .tooltip {
     visibility: hidden;
     position: absolute;
@@ -35,16 +24,12 @@
     height: 330px;
 }
 
-/*
-    tooltip div, when hover
-*/
+/* tooltip div, when hover */
 .tooltip_container:hover .tooltip {
     visibility: visible;
 }
 
-/*
-    tooltip header
-*/
+/* tooltip header */
 .tooltip_header {
     display: flex;
     flex-flow: row wrap;
@@ -55,23 +40,21 @@
 }
 
 .tooltip_header img {
-    margin: 3% 0 0 4%;
+    margin: 3% 0 0 5%;
     padding: 0;
-    width: 40%;
+    width: 35%;
 }
 
 .tooltip_header span {
     margin: 0 0 0 2.5%;
     padding: 0;
-    width: 50%;
+    width: 55%;
     text-align: center;
     font-weight: bold;
-    font-size: 0.9rem;
+    font-size: 0.75rem;
 }
 
-/*
-    tooltip article - fieldset
-*/
+/* tooltip article - fieldset */
 .tooltip_article {
     display: flex;
     flex-flow: row wrap;
@@ -113,9 +96,7 @@
     background-color: #FFF;
 }
 
-/*
-    tooltip article - table body
-*/
+/* tooltip article - table body */
 .tooltip_article tbody {
     display: flex;
     flex-flow: row wrap;
@@ -132,33 +113,32 @@
 
 .tooltip_article tbody tr td {
     width: 50%;
-
-}
-
-.tooltip_article tbody tr td {
-    font-size: 0.6rem;
+    padding-left: 0.6rem;
+    font-size: 0.7rem;
     line-height: 0.7rem;
+    text-align: left;
     white-space: nowrap;
 }
 
-.tooltip_article tbody tr td font.data_type {
+.tooltip_article span {}
+
+
+.tooltip_article span.data_type {
     color: #000;
     font-weight: bold;
 }
 
-.tooltip_article tbody tr td font.data_text {
+.tooltip_article span.data_text {
     color: #298035;
     font-weight: bold;
 }
 
-.tooltip_article tbody tr td font {
+.tooltip_article span.no_data {
     color: #808080;
     font-weight: lighter;
 }
 
-/*
-    tooltip article
-*/
+/* tooltip footer */
 .tooltip_footer {
     justify-content: start;
     margin: 0 6% 0 6%;

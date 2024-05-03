@@ -4,8 +4,9 @@
 }
 
 /* parent table */
-#medal_list_zone {
-    margin-top: 2rem;
+body {
+    width: 100%;
+    min-height: 1000px;
 }
 
 #medal_list {
@@ -15,9 +16,23 @@
     width: 1000px;
     max-width: 1000px;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 2rem;
     font-size: 0.9rem;
     border: 0;
+}
+
+/* sticky setting */
+#medal_list thead,
+#medal_list tbody {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+}
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 10rem;
 }
 
 /* basic css of th tag */

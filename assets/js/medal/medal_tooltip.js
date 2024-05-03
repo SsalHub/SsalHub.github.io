@@ -106,10 +106,10 @@ function initTooltipArticle(dataList) {
 function getTooltipTableData(dataType, data) {
     if (data == "" || data == "0") {
         // no data
-        return '<font>' + dataType + '</font>';
+        return '<span class="no_data">' + dataType + '</span>';
     } else if (data[0] != "-") {
         data = "+" + data;
-        return '<font class="data_type">' + dataType + '</font><font class="data_text">' + data + '</font>';
+        return '<span class="data_type">' + dataType + '</span><span class="data_text">' + data + '</span>';
     }
     return "Error!";
 }
